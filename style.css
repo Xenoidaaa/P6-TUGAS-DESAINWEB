@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hmbg-btn img {
+  width: 25px;
+  filter: invert(1);
+}
+
+.hmbg-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-head {
+  display: flex;
+  gap: 80px;
+  background-color: rgb(15, 118, 208);
+  padding: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.sidebar {
+  background-color: rgb(175, 173, 173);
+  width: 200px;
+  height: 900px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  padding: 10px;
+  line-height: 50px;
+
+}
+
+.main-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 250px;
+}
+
+.main-art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.main-art p {
+  max-width: 700px;
+  text-align: left;
+}
+
+.text-head {
+  color: rgb(15, 118, 208);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topic {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 30px;
+  margin-bottom: 70px;
+  color: white;
+}
+
+.topic p {
+  max-width: 400px;
+}
+
+.art {
+  background-color: lightslategrey;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .main-head {
+    display: flex;
+    justify-content: flex-start;
+    gap: 220px;
+  }
+
+  .text-head {
+    font-size: 20px;
+  }
+
+  .menu  li{
+    list-style: none;
+  }
+
+  .menu ul li a span {
+    display: none;
+  }
+
+  .sidebar {
+    width: 50px;
+    height: 1500px;
+  }
+
+  .main-art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  }
+
+  .main-art p {
+  max-width: 300px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.main-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+}
